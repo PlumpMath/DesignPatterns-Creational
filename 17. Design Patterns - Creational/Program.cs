@@ -10,6 +10,7 @@ namespace _17.Design_Patterns___Creational
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello world!");
         }
     }
 }
