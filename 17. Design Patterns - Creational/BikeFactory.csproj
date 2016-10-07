@@ -7,7 +7,7 @@
     <ProjectGuid>{A815F7A4-1AEF-4BBE-B871-D1F0AD5F1079}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_17.Design_Patterns___Creational</RootNamespace>
+    <RootNamespace>BikeFactory</RootNamespace>
     <AssemblyName>_17.Design_Patterns___Creational</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Manufacturers\IManufacturer.cs" />
+    <Compile Include="Manufacturers\Manufacturer.cs" />
+    <Compile Include="Products\AdultBike.cs" />
+    <Compile Include="Products\Bike.cs" />
+    <Compile Include="Products\ChildBike.cs" />
+    <Compile Include="Products\IBike.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

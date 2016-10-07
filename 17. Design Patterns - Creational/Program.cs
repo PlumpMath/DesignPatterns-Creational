@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _17.Design_Patterns___Creational
+namespace BikeFactory
 {
     class Program
     {
@@ -12,5 +12,7 @@ namespace _17.Design_Patterns___Creational
         {
             Console.WriteLine("Hello world! aAwesome Nice");
         }
+
+        //private static void 
     }
 }
