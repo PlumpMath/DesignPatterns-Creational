@@ -3,12 +3,8 @@ using BikeFactory.Products;
 
 namespace BikeFactory.Manufacturers
 {
-    public class Manufacturer : IManufacturer
+    public abstract class Manufacturer : IManufacturer
     {
-
-        public Bike CreateBike()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract Bike CreateBike();
     }
 }

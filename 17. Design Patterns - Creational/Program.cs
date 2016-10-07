@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BikeFactory.Manufacturers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,15 @@ namespace BikeFactory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world! aAwesome Nice");
+            TestManufacturersProduct(new RamBikes());
+
         }
 
-        //private static void 
+        static void TestManufacturersProduct(Manufacturer manufacturer)
+        {
+            var bike = manufacturer.CreateBike();
+            Console.WriteLine(bike.ToString());
+            bike.Ride();
+        }
     }
 }

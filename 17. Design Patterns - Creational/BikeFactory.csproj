@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Manufacturers\IManufacturer.cs" />
+    <Compile Include="Manufacturers\JollyBikes.cs" />
     <Compile Include="Manufacturers\Manufacturer.cs" />
+    <Compile Include="Manufacturers\RamBikes.cs" />
     <Compile Include="Products\AdultBike.cs" />
     <Compile Include="Products\Bike.cs" />
     <Compile Include="Products\ChildBike.cs" />
