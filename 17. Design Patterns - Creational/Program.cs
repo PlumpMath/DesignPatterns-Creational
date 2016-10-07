@@ -12,7 +12,10 @@ namespace BikeFactory
         static void Main(string[] args)
         {
             TestManufacturersProduct(new RamBikes());
+            Console.WriteLine(new string('-', 60));
 
+            TestManufacturersProduct(new JollyBikes());
+            Console.WriteLine(new string('-', 60));
         }
 
         static void TestManufacturersProduct(Manufacturer manufacturer)
