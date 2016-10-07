@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="21dd776e-cb72-48c9-bedf-1dabfa65de2a" name="Factory" linkedPackageId="69f62f7b-c943-4726-9cf1-735d32d27eff" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="97261fa7-5e83-4872-a3cf-d5b87fbe6319">
+      <profileInstance Id="1a48bc03-57eb-4e19-8608-c2440d5d539c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="11aa5806-8b7e-469c-8a73-5c031ca7315e">
+      <profileInstance Id="b8d3adbd-e8a0-4b76-9871-545c1dfbb3eb" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="302ef8c9-3024-4bfd-8c3d-f323084999a5" name="IManufacturer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6517118c-389d-479e-b35c-428443dd38b6" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5038fbd2-e4cf-405f-ac3e-e151f95f7d78" name="Manufacturer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6561b729-c00a-4343-a6d0-f234bdd3ed1f" />
+        <suppliersInternal>
+          <interfaceRealization Id="b4259057-77d8-44a2-926b-16f208c81541">
+            <interfaceMoniker Id="302ef8c9-3024-4bfd-8c3d-f323084999a5" LastKnownName="IManufacturer" />
+            <elementDefinition Id="580b5f6a-9d27-4f68-a92c-ad64701a48aa" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="976fdca4-87c1-4a7c-b7b5-3c97bc6ab0d0" isSubstitutable="false">
+            <classMoniker Id="52eb1732-7204-4386-b92c-4c9047eaa033" LastKnownName="RamBikes" />
+            <elementDefinition Id="1df95ad7-175e-4cbc-80da-5bb64153c9fa" />
+          </generalization>
+          <generalization Id="714e78a9-9352-4bf8-8580-ac05eb0e02cb" isSubstitutable="false">
+            <classMoniker Id="3e7f67ef-150e-4e5a-9b49-38061de0c32a" LastKnownName="JollyBikes" />
+            <elementDefinition Id="a877d58e-9a1f-43c8-80cd-fdfbf0fe04ca" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="cdcf981c-2234-44b4-9fff-33510ae05c4a" isDerived="false" sourceEndRoleName="Manufacturer" targetEndRoleName="IManufacturer" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="302ef8c9-3024-4bfd-8c3d-f323084999a5" LastKnownName="IManufacturer" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ecc956d3-4d58-4439-af10-6c1aadfd6751" name="Manufacturer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f69a879d-9e83-4b73-8681-ca776e4f5cae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="abb2b95e-ed8a-4e57-bba5-70db9f625ecf" name="IManufacturer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="61e55cad-ffb3-4360-af72-d5056395a1eb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dc3bebb8-f3e1-4240-a063-84bfb7c8a3c7" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3e7f67ef-150e-4e5a-9b49-38061de0c32a" name="JollyBikes" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2788c371-ac45-45ad-98ea-734d965554dc" />
+        <ownedOperationsInternal>
+          <operation Id="5d37b04a-d056-4f6a-b29b-7450629a85b1" name="Bike CreateBike" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="88128c30-bce0-48c0-afc1-45c7bd777d9a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="52eb1732-7204-4386-b92c-4c9047eaa033" name="RamBikes" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="12600fc5-acbc-4043-8b82-d933e5d742f7" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="9aa1b400-cb18-47f1-9dcf-396d151e3bfe" name="IBike" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="454af4c7-2ad9-4bd4-a175-ca363173d6fa" />
+        <suppliersInternal>
+          <dependency Id="a46f2687-bd3c-4237-a279-6648346ba1ab">
+            <classMoniker Id="42f658c4-41d0-4d3e-9f5c-8c01d6a1a60c" LastKnownName="Bike" />
+            <elementDefinition Id="2b8a57b3-7c9b-4753-a07c-797c068e2efa" />
+          </dependency>
+        </suppliersInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="42f658c4-41d0-4d3e-9f5c-8c01d6a1a60c" name="Bike" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="42273fb7-90e9-4556-a18c-0db387584417" />
+        <generalsInternal>
+          <generalization Id="888812c9-b393-45bb-8cc8-85edafd2583e" isSubstitutable="false">
+            <classMoniker Id="5ccdb1f3-c150-4047-a7f6-34cded89e5f6" LastKnownName="ChildBike" />
+            <elementDefinition Id="5ff01388-f033-4412-a46f-f2dc48438b7f" />
+          </generalization>
+          <generalization Id="b9ac13bc-80bb-4c61-b320-0ea12195c55a" isSubstitutable="false">
+            <classMoniker Id="6cdf9986-2c4b-4c83-a8c5-cddc27528ea8" LastKnownName="AdultBike" />
+            <elementDefinition Id="54247296-94be-4557-bcc3-0ce54c6a74a6" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5ccdb1f3-c150-4047-a7f6-34cded89e5f6" name="ChildBike" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="67d6a67b-d388-4257-bd44-5c2aff0b25b7" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6cdf9986-2c4b-4c83-a8c5-cddc27528ea8" name="AdultBike" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bcbbe721-9f11-41e2-bf52-393246aefd54" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="69f62f7b-c943-4726-9cf1-735d32d27eff" name="FactoryModelingProject">
+    <elementDefinition Id="08d6d0a3-1c9f-43d8-858e-a7af8bf19267" />
+  </package>
+</logicalClassDesignerModel>
